@@ -17,25 +17,31 @@ void del_at_position(int position);
 void traverse();
 void create_nodes();
 
-int main() {
+int main() 
+{
     int choice;
     struct node *new1;
     char c;
     printf("Do you want to enter the data in nodes(y/n): ");
     scanf(" %c", &c);
-    if (c == 'y' || c == 'Y') {
+    if (c == 'y' || c == 'Y') 
+    {
         create_nodes();
-    } else {
+    } 
+    else 
+    {
         printf("!Empty Node!\n");
     }
 
-    while (1) {
+    while (1) 
+    {
         printf("\nEnter the choice\n");
         printf("1. Insertion at Beg\n2. Inserstion at End\n3. Inserstion at Particular location\n");
         printf("4. Deletion at Beg\n5. Deletion at End\n6. Deletion at particular location\n");
         printf("7. Traverse\n8. Exit\n");
         scanf("%d", &choice);
-        switch (choice) {
+        switch (choice) 
+        {
             case 1:
                 new1 = (struct node *)malloc(sizeof(struct node));
                 printf("Enter the data: ");
